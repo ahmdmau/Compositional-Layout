@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopCategoryCell" id="gTV-IL-0wX" customClass="TopCategoryCell" customModule="FoodDelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="16g-PV-tV4">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="zSm-6N-nzg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TO-YI-8Hf">
+                        <rect key="frame" x="0.0" y="76" width="120" height="23"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5TO-YI-8Hf" firstAttribute="top" secondItem="16g-PV-tV4" secondAttribute="bottom" constant="8" id="1Iy-Fq-EIO"/>
+                <constraint firstAttribute="trailing" secondItem="5TO-YI-8Hf" secondAttribute="trailing" id="4Gm-jF-R9W"/>
+                <constraint firstItem="5TO-YI-8Hf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A5d-7c-FsU"/>
+                <constraint firstAttribute="bottom" secondItem="5TO-YI-8Hf" secondAttribute="bottom" constant="4" id="Mds-dI-sG6"/>
+                <constraint firstItem="16g-PV-tV4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vni-YX-X4Z"/>
+                <constraint firstAttribute="trailing" secondItem="16g-PV-tV4" secondAttribute="trailing" id="eJG-T6-Fpd"/>
+                <constraint firstItem="16g-PV-tV4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mBs-lQ-V3m"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="234" height="90"/>
+            <connections>
+                <outlet property="itemImageView" destination="16g-PV-tV4" id="jQo-Fc-Nqx"/>
+                <outlet property="nameLbl" destination="5TO-YI-8Hf" id="PpL-ct-lN8"/>
+            </connections>
+            <point key="canvasLocation" x="-118.84057971014494" y="16.40625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="1565.5" height="1044"/>
+    </resources>
+</document>
